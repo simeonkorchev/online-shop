@@ -7,18 +7,18 @@ import android.database.sqlite.SQLiteDatabase;
 public abstract class DbContentProvider {
     protected SQLiteDatabase mDb;
 
-    public int delete(String tableName, String selection,
+    protected int delete(String tableName, String selection,
                       String[] selectionArgs) {
         return mDb.delete(tableName, selection, selectionArgs);
     }
 
-    public long insert(String tableName, ContentValues values) {
+    protected long insert(String tableName, ContentValues values) {
         return mDb.insert(tableName, null, values);
     }
 
     protected abstract <T> T cursorToEntity(Cursor cursor);
 
-    public DbContentProvider(SQLiteDatabase db) {
+    protected DbContentProvider(SQLiteDatabase db) {
         this.mDb = db;
     }
 
