@@ -1,12 +1,11 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
 
-import com.example.boyanyosifov.myapplication.R;
+import java.io.Serializable;
 
-public class User extends BaseObservable{
-    private int id;
+public class User extends BaseObservable implements Serializable {
+    private static final long INVALID_ID = -1;
+    private long id;
     private String username;
     private String password;
     private String address;
@@ -15,18 +14,25 @@ public class User extends BaseObservable{
 
     }
 
-    public User(int id, String username, String password, String address) {
+    public User(long id, String username, String password, String address) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.address = address;
     }
 
-    public int getId() {
+    public User(String username, String password, String address) {
+        this.id = INVALID_ID;
+        this.username = username;
+        this.password = password;
+        this.address = address;
+    }
+    
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.LaptopSchema.LAPTOP_TABLE;
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.LaptopSchema.LAPTOP_TABLE_CREATE;
+import static com.example.boyanyosifov.myapplication.com.online.shop.repository.OrderSchema.ORDER_TABLE;
+import static com.example.boyanyosifov.myapplication.com.online.shop.repository.OrderSchema.ORDER_TABLE_CREATE;
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.PhoneSchema.PHONE_TABLE;
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.PhoneSchema.PHONE_TABLE_CREATE;
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.UserSchema.USER_TABLE;
@@ -17,9 +19,10 @@ import static com.example.boyanyosifov.myapplication.com.online.shop.repository.
 
 public class Database {
     private DatabaseHelper databaseHelper;
-    private DataManager userDbContentProvider;
-    private DataManager laptopDbContentProvider;
-    private DataManager phoneDbContentProvider;
+    private UserContentProvider userDbContentProvider;
+    private LaptopContentProvider laptopDbContentProvider;
+    private PhoneContentProvider phoneDbContentProvider;
+    private OrderContentProvider orderDbContentProvider;
 
     public Database(Context context) {
         this.databaseHelper =  new DatabaseHelper(context);
@@ -33,23 +36,26 @@ public class Database {
         databaseHelper.close();
     }
 
-    public DataManager getUserDbContentProvider() {
+    public UserContentProvider getUserDbContentProvider() {
         return userDbContentProvider;
     }
 
-    public DataManager getLaptopDbContentProvider() {
+    public LaptopContentProvider getLaptopDbContentProvider() {
         return laptopDbContentProvider;
     }
 
-    public DataManager getPhoneDbContentProvider() {
+    public PhoneContentProvider getPhoneDbContentProvider() {
         return phoneDbContentProvider;
+    }
+
+    public OrderContentProvider getOrderDbContentProvider() {
+        return orderDbContentProvider;
     }
 
     private class DatabaseHelper extends SQLiteOpenHelper {
 
         private static final int DATABASE_VERSION = 1;
         private static final String DATABASE_NAME = "onlineshop.db";
-
 
         public DatabaseHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -60,6 +66,7 @@ public class Database {
             db.execSQL(LAPTOP_TABLE_CREATE);
             db.execSQL(PHONE_TABLE_CREATE);
             db.execSQL(USER_TABLE_CREATE);
+            db.execSQL(ORDER_TABLE_CREATE);
         }
 
         @Override
@@ -68,7 +75,7 @@ public class Database {
             db.execSQL("DROP TABLE IF EXISTS " + LAPTOP_TABLE);
             db.execSQL("DROP TABLE IF EXISTS " + PHONE_TABLE);
             db.execSQL("DROP TABLE IF EXISTS " + USER_TABLE);
-
+            db.execSQL("DROP TABLE IF EXISTS " + ORDER_TABLE);
             // Create tables again
             onCreate(db);
         }
@@ -82,6 +89,7 @@ public class Database {
             userDbContentProvider = new UserContentProvider(database);
             laptopDbContentProvider = new LaptopContentProvider(database);
             phoneDbContentProvider = new PhoneContentProvider(database);
+            orderDbContentProvider = new OrderContentProvider(database);
         }
     }
 }

@@ -17,7 +17,7 @@ public class PhoneContentProvider extends DbContentProvider implements PhoneSche
 
     //consider refactoring the logic
     @Override
-    public Phone getById(int id) {
+    public Phone getById(long id) {
         Phone phone = new Phone();
         cursor = super.query(PHONE_TABLE,PHONE_COLUMNS, ID + " = ?" , new String[]{ String.valueOf(id)}, COLUMN_ID);
         if(cursor != null) {
@@ -49,9 +49,9 @@ public class PhoneContentProvider extends DbContentProvider implements PhoneSche
     }
 
     @Override
-    public boolean addEntity(Phone entity) {
+    public Phone addEntity(Phone entity) {
         setContentValues(entity);
-        return super.insert(PHONE_TABLE,getContentValues()) > 0;
+        return new Phone(super.insert(PHONE_TABLE,getContentValues()),entity.getManufacturer(),entity.getModel(),entity.getPrice(), entity.getDescription());
     }
 
     @Override

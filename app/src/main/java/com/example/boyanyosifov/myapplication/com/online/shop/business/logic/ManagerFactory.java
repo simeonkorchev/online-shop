@@ -6,16 +6,20 @@ import com.example.boyanyosifov.myapplication.com.online.shop.business.logic.IMa
 
 public final class ManagerFactory {
 
-    public static final  IUsersManager getUsersManager() {
-        return new UsersManager();
+    public static final  IUsersManager getUsersManager(Context context) {
+        return new UsersManager(context);
     }
 
-    public static final IPhonesManager getPhonesManager() {
-        return new PhonesManager();
+    public static final IPhonesManager getPhonesManager(Context context) {
+        return new PhonesManager(context);
     }
 
 
-    public static final ILaptopManager getLaptopManager() {
-        return new LaptopManager();
+    public static final ILaptopManager getLaptopManager(Context context) {
+        return new LaptopManager(context);
+    }
+
+    public static final IOrderManager getOrderManager(Context context) {
+        return new OrderManager(context);
     }
 }

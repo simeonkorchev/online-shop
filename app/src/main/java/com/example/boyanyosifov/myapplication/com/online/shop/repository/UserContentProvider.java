@@ -18,7 +18,7 @@ public class UserContentProvider extends DbContentProvider implements DataManage
     }
 
     @Override
-    public User getById(int id) {
+    public User getById(long id) {
         final String selectionArgs[] = {String.valueOf(id)};
         final String selection = ID + " = ?";
         User user = new User();
@@ -55,14 +55,14 @@ public class UserContentProvider extends DbContentProvider implements DataManage
     }
 
     @Override
-    public boolean addEntity(User user) {
+    public User addEntity(User user) {
         setContentValue(user);
         try {
-            return super.insert(USER_TABLE, getContentValue()) > 0;
+             new User(super.insert(USER_TABLE, getContentValue()), user.getUsername(), user.getPassword(), user.getAddress());
         } catch (SQLiteConstraintException ex){
             Log.w("Database", ex.getMessage());
-            return false;
         }
+        return null;
     }
 
     @Override

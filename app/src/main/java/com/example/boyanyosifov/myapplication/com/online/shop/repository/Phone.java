@@ -2,62 +2,56 @@ package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
 import java.io.Serializable;
 
-public class Phone implements Serializable{
-    private int id;
-    private String manufacturer;
-    private String model;
-    private double price;
-    private String description;
+public class Phone extends Product implements Serializable{
 
-    public Phone(int id, String manufacturer, String model, double price, String description) {
-        this.id = id;
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.price = price;
-        this.description = description;
+
+    public Phone(long id, String manufacturer, String model, double price, String description) {
+        super(id,manufacturer,model, description,price);
     }
 
     public Phone() {
 
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getManufacturer() {
-        return manufacturer;
+        return super.getManufacturer();
     }
 
     public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+        super.setManufacturer(manufacturer);
     }
 
     public String getModel() {
-        return model;
+        return super.getModel();
     }
 
     public void setModel(String model) {
-        this.model = model;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
+        super.setModel(model);
     }
 
     public String getDescription() {
-        return description;
+        return super.getDescription();
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        super.setDescription(description);
+    }
+
+    public double getPrice() {
+        return super.getPrice();
+    }
+
+    public void setPrice(double price) {
+        super.setPrice(price);
+    }
+
+
+    public long getId() {
+        return super.getId();
+    }
+
+
+    public void setId(long id) {
+        super.setId(id);
     }
 }
