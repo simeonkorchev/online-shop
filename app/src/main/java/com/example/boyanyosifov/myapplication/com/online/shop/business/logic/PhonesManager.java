@@ -2,10 +2,20 @@ package com.example.boyanyosifov.myapplication.com.online.shop.business.logic;
 
 import android.content.Context;
 
-public class PhonesManager implements IPhonesManager {
-    private Context context;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.Database;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.Phone;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.PhoneContentProvider;
 
+import java.util.List;
+
+public class PhonesManager implements IPhonesManager {
+    private PhoneContentProvider phoneContentProvider;
     public PhonesManager(Context context) {
-        this.context = context;
+        phoneContentProvider = new Database(context).getPhoneDbContentProvider();
+    }
+
+    @Override
+    public List<Phone> getAll() {
+        return phoneContentProvider.getAll();
     }
 }
