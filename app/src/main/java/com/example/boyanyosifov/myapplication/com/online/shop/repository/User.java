@@ -1,6 +1,11 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
 
+import android.databinding.BaseObservable;
+import android.databinding.Bindable;
+
+import com.example.boyanyosifov.myapplication.R;
+
 import java.io.Serializable;
 
 public class User extends BaseObservable implements Serializable {

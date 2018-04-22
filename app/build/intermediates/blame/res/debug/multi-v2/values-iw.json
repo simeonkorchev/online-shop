@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\values-iw\\values-iw.xml",
+            "outputFile": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/res/merged/debug/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b0637a11f495be1bdfd3f783b31546d0\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/res/values-iw/values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,308,416,500,600,714,792,870,951,1053,1157,1255,1358,1459,1559,1711,1807",
+                        "endColumns": "103,98,107,83,99,113,77,77,80,101,103,97,102,100,99,151,95,80",
+                        "endOffsets": "204,303,411,495,595,709,787,865,946,1048,1152,1250,1353,1454,1554,1706,1802,1883"
+                    }
+                },
+                {
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,25 +28,25 @@
                         "startOffsets": "1888",
                         "endColumns": "102",
                         "endOffsets": "1986"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92f7611b128604fc6d76a98bbb8c9890\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,308,416,500,600,714,792,870,951,1053,1157,1255,1358,1459,1559,1711,1807",
-                        "endColumns": "103,98,107,83,99,113,77,77,80,101,103,97,102,100,99,151,95,80",
-                        "endOffsets": "204,303,411,495,595,709,787,865,946,1048,1152,1250,1353,1454,1554,1706,1802,1883"
                     }
                 }
             ]
         },
         {
-            "outputFile": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
+            "outputFile": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b0637a11f495be1bdfd3f783b31546d0\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/res/values-iw/values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,308,416,500,600,714,792,870,951,1053,1157,1255,1358,1459,1559,1711,1807",
+                        "endColumns": "103,98,107,83,99,113,77,77,80,101,103,97,102,100,99,151,95,80",
+                        "endOffsets": "204,303,411,495,595,709,787,865,946,1048,1152,1250,1353,1454,1554,1706,1802,1883"
+                    }
+                },
+                {
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -50,16 +60,6 @@
                         "startOffsets": "1888",
                         "endColumns": "102",
                         "endOffsets": "1986"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92f7611b128604fc6d76a98bbb8c9890\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,308,416,500,600,714,792,870,951,1053,1157,1255,1358,1459,1559,1711,1807",
-                        "endColumns": "103,98,107,83,99,113,77,77,80,101,103,97,102,100,99,151,95,80",
-                        "endOffsets": "204,303,411,495,595,709,787,865,946,1048,1152,1250,1353,1454,1554,1706,1802,1883"
                     }
                 }
             ]

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\values-kk\\values-kk.xml",
+            "outputFile": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92f7611b128604fc6d76a98bbb8c9890\\res\\values-kk\\values-kk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,320,430,515,621,740,821,901,982,1085,1190,1288,1395,1504,1604,1770,1869",
-                        "endColumns": "111,102,109,84,105,118,80,79,80,102,104,97,106,108,99,165,98,80",
-                        "endOffsets": "212,315,425,510,616,735,816,896,977,1080,1185,1283,1390,1499,1599,1765,1864,1945"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b0637a11f495be1bdfd3f783b31546d0\\res\\values-kk\\values-kk.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/res/values-kk/values-kk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,25 +18,25 @@
                         "startOffsets": "1950",
                         "endColumns": "100",
                         "endOffsets": "2046"
+                    }
+                },
+                {
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/res/values-kk/values-kk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,217,320,430,515,621,740,821,901,982,1085,1190,1288,1395,1504,1604,1770,1869",
+                        "endColumns": "111,102,109,84,105,118,80,79,80,102,104,97,106,108,99,165,98,80",
+                        "endOffsets": "212,315,425,510,616,735,816,896,977,1080,1185,1283,1390,1499,1599,1765,1864,1945"
                     }
                 }
             ]
         },
         {
-            "outputFile": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
+            "outputFile": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/res/merged/debug/values-kk/values-kk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92f7611b128604fc6d76a98bbb8c9890\\res\\values-kk\\values-kk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,320,430,515,621,740,821,901,982,1085,1190,1288,1395,1504,1604,1770,1869",
-                        "endColumns": "111,102,109,84,105,118,80,79,80,102,104,97,106,108,99,165,98,80",
-                        "endOffsets": "212,315,425,510,616,735,816,896,977,1080,1185,1283,1390,1499,1599,1765,1864,1945"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b0637a11f495be1bdfd3f783b31546d0\\res\\values-kk\\values-kk.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/res/values-kk/values-kk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -60,6 +50,16 @@
                         "startOffsets": "1950",
                         "endColumns": "100",
                         "endOffsets": "2046"
+                    }
+                },
+                {
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/res/values-kk/values-kk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,217,320,430,515,621,740,821,901,982,1085,1190,1288,1395,1504,1604,1770,1869",
+                        "endColumns": "111,102,109,84,105,118,80,79,80,102,104,97,106,108,99,165,98,80",
+                        "endOffsets": "212,315,425,510,616,735,816,896,977,1080,1185,1283,1390,1499,1599,1765,1864,1945"
                     }
                 }
             ]

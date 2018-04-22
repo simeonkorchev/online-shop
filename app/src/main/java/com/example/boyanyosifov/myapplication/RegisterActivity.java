@@ -17,11 +17,13 @@ public class RegisterActivity extends AppCompatActivity {
 
     ActivityRegisterBinding registerBinding;
     User newUser;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         registerBinding = DataBindingUtil.setContentView(this, R.layout.activity_register);
+        editText = (EditText)findViewById(R.id.editText_email);
 
        registerBinding.setNewuser(newUser);
 
@@ -29,6 +31,10 @@ public class RegisterActivity extends AppCompatActivity {
            @Override
            public void onClickRegister() {
                //validation and add user to db
+               if(Validation.validateRegistration(newUser.getUsername(), newUser.getPassword(), editText.getText().toString())){
+                   Toast.makeText(RegisterActivity.this, "Successful registration!", Toast.LENGTH_SHORT).show();
+
+               }
            }
        });
 

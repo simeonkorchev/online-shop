@@ -36,7 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClickLogin() {
                 //validation, login and navigate to store activity
-                ManagerFactory.getUsersManager(MainActivity.this).login(user.getUsername(), user.getPassword());
+                if (Validation.validateLogin(user.getUsername(), user.getPassword())){
+                    //ManagerFactory.getUsersManager().login(user.getUsername(), user.getPassword());
+                    navigateToStoreAct();
+                }
+
+
+
             }
 
             @Override
@@ -64,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void navigateToStoreAct(){
         Intent intent = new Intent(getApplicationContext(), StoreActivity.class);
+        //intent.putExtra("user_data", user);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
