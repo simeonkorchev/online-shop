@@ -18,7 +18,7 @@ public class LaptopContentProvider extends DbContentProvider implements DataMana
     }
 
     @Override
-    public Laptop getById(int id) {
+    public Laptop getById(long id) {
         final String selectionArgs[] = {String.valueOf(id)};
         final String selection = ID + " = ?";
         Laptop laptop = new Laptop();
@@ -49,14 +49,14 @@ public class LaptopContentProvider extends DbContentProvider implements DataMana
     }
 
     @Override
-    public boolean addEntity(Laptop entity) {
+    public Laptop addEntity(Laptop entity) {
         setContentValues(entity);
 
         try{
-            return super.insert(LAPTOP_TABLE, getContentValues()) > 0;
+            return new Laptop(super.insert(LAPTOP_TABLE, getContentValues()), entity.getManufacturer(), entity.getModel(), entity.getDescription(),entity.getPrice());
         } catch( SQLiteConstraintException e) {
             Log.w("Database" , e.getMessage());
-            return false;
+            return null;
         }
     }
 

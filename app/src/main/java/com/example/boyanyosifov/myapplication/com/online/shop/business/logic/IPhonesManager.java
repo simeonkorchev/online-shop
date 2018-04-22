@@ -1,4 +1,5 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.business.logic;
 
-interface IPhonesManager {
+public interface IPhonesManager {
+
 }

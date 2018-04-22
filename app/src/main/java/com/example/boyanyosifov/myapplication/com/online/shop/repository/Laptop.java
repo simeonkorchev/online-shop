@@ -2,61 +2,52 @@ package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
 import java.io.Serializable;
 
-public class Laptop implements Serializable{
-    private int id;
-    private String manufacturer;
-    private String model;
-    private String description;
-    private double price;
+public class Laptop extends  Product implements Serializable{
 
-    public Laptop() {}
-    public Laptop(int id, String manufacturer, String model, String description, double price) {
-        this.id = id;
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.description = description;
-        this.price = price;
+    public Laptop() {super();}
+    public Laptop(long id, String manufacturer, String model, String description, double price) {
+        super(id,manufacturer,model,description,price);
     }
 
     public String getManufacturer() {
-        return manufacturer;
+        return super.getManufacturer();
     }
 
     public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+        super.setManufacturer(manufacturer);
     }
 
     public String getModel() {
-        return model;
+        return super.getModel();
     }
 
     public void setModel(String model) {
-        this.model = model;
+        super.setModel(model);
     }
 
     public String getDescription() {
-        return description;
+        return super.getDescription();
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        super.setDescription(description);
     }
 
     public double getPrice() {
-        return price;
+        return super.getPrice();
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        super.setPrice(price);
     }
 
 
-    public int getId() {
-        return id;
+    public long getId() {
+        return super.getId();
     }
 
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(long id) {
+        super.setId(id);
     }
 }
