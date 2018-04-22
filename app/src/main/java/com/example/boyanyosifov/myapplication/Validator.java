@@ -3,7 +3,7 @@ package com.example.boyanyosifov.myapplication;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Validation {
+public class Validator {
     public static final Pattern EMAIL_REGEX =
             Pattern.compile("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$");
 
@@ -21,12 +21,8 @@ public class Validation {
             return true;
     }
 
-
-
     public static boolean validateEmail(String emailStr) {
         Matcher matcher = EMAIL_REGEX.matcher(emailStr);
         return matcher.find();
     }
-
-
 }

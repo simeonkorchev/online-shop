@@ -31,4 +31,6 @@ public class UsersManager implements IUsersManager {
     public User create(String username, String password, String email) {
         return userDbContentProvider.addEntity(new User(username,password,email));
     }
+
+
 }

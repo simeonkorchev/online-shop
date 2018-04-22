@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClickLogin() {
                 //validation, login and navigate to store activity
-                if (Validation.validateLogin(user.getUsername(), user.getPassword())){
+                if (Validator.validateLogin(user.getUsername(), user.getPassword())){
                     //ManagerFactory.getUsersManager().login(user.getUsername(), user.getPassword());
                     navigateToStoreAct();
                 }

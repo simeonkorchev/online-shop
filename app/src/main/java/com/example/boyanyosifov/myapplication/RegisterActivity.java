@@ -9,7 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.boyanyosifov.myapplication.com.online.shop.business.logic.ManagerFactory;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.Database;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.User;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.UserContentProvider;
 import com.example.boyanyosifov.myapplication.databinding.ActivityMainBinding;
 import com.example.boyanyosifov.myapplication.databinding.ActivityRegisterBinding;
 
@@ -24,17 +27,22 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         registerBinding = DataBindingUtil.setContentView(this, R.layout.activity_register);
         editText = (EditText)findViewById(R.id.editText_email);
-
+        newUser = new User();
        registerBinding.setNewuser(newUser);
 
        registerBinding.setRegisterevent(new IRegisterEvent() {
            @Override
            public void onClickRegister() {
                //validation and add user to db
-               if(Validation.validateRegistration(newUser.getUsername(), newUser.getPassword(), editText.getText().toString())){
+               if(Validator.validateRegistration(newUser.getUsername(), newUser.getPassword(), editText.getText().toString())){
                    Toast.makeText(RegisterActivity.this, "Successful registration!", Toast.LENGTH_SHORT).show();
-
+                   ManagerFactory.getUsersManager(RegisterActivity.this).
+                           create(registerBinding.getNewuser().getUsername(),
+                                   registerBinding.getNewuser().getPassword(),
+                                   registerBinding.getNewuser().getAddress());
                }
+               else
+                   Toast.makeText(RegisterActivity.this, "Failed registration", Toast.LENGTH_SHORT).show();
            }
        });
 

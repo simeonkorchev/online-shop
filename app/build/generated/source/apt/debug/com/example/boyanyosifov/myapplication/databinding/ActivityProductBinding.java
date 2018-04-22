@@ -18,9 +18,9 @@ public class ActivityProductBinding extends android.databinding.ViewDataBinding 
     }
     // views
     @NonNull
-    private final android.widget.RelativeLayout mboundView0;
-    @NonNull
     public final android.widget.TextView textView;
+    @NonNull
+    public final android.widget.RelativeLayout textViewProductName;
     // variables
     // values
     // listeners
@@ -29,9 +29,9 @@ public class ActivityProductBinding extends android.databinding.ViewDataBinding 
     public ActivityProductBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
         final Object[] bindings = mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds);
-        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
-        this.mboundView0.setTag(null);
         this.textView = (android.widget.TextView) bindings[1];
+        this.textViewProductName = (android.widget.RelativeLayout) bindings[0];
+        this.textViewProductName.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
