@@ -67,5 +67,6 @@ public class User extends BaseObservable implements Serializable {
 
     public void setAddress(String address) {
         this.address = address;
+        notifyPropertyChanged(R.id.editText_email);
     }
 }

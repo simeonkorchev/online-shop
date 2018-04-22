@@ -14,7 +14,6 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.editText_email, 4);
         sViewsWithIds.put(R.id.editText_City, 5);
         sViewsWithIds.put(R.id.editText_Country, 6);
         sViewsWithIds.put(R.id.editText_Adress, 7);
@@ -49,6 +48,32 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
     // values
     // listeners
     // Inverse Binding Event Handlers
+    private android.databinding.InverseBindingListener editTextEmailandroidTextAttrChanged = new android.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of newuser.address
+            //         is newuser.setAddress((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = android.databinding.adapters.TextViewBindingAdapter.getTextString(editTextEmail);
+            // localize variables for thread safety
+            // newuser
+            com.example.boyanyosifov.myapplication.com.online.shop.repository.User newuser = mNewuser;
+            // newuser.address
+            java.lang.String newuserAddress = null;
+            // newuser != null
+            boolean newuserJavaLangObjectNull = false;
+
+
+
+            newuserJavaLangObjectNull = (newuser) != (null);
+            if (newuserJavaLangObjectNull) {
+
+
+
+
+                newuser.setAddress(((java.lang.String) (callbackArg_0)));
+            }
+        }
+    };
     private android.databinding.InverseBindingListener editTextPasswordandroidTextAttrChanged = new android.databinding.InverseBindingListener() {
         @Override
         public void onChange() {
@@ -111,6 +136,7 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
         this.editTextCity = (android.widget.EditText) bindings[5];
         this.editTextCountry = (android.widget.EditText) bindings[6];
         this.editTextEmail = (android.widget.EditText) bindings[4];
+        this.editTextEmail.setTag(null);
         this.editTextPassword = (android.widget.EditText) bindings[2];
         this.editTextPassword.setTag(null);
         this.editTextPhone = (android.widget.EditText) bindings[8];
@@ -210,6 +236,7 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
         }
         com.example.boyanyosifov.myapplication.com.online.shop.repository.User newuser = mNewuser;
         java.lang.String newuserUsername = null;
+        java.lang.String newuserAddress = null;
         com.example.boyanyosifov.myapplication.IRegisterEvent registerevent = mRegisterevent;
         java.lang.String newuserPassword = null;
 
@@ -220,6 +247,8 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
                 if (newuser != null) {
                     // read newuser.username
                     newuserUsername = newuser.getUsername();
+                    // read newuser.address
+                    newuserAddress = newuser.getAddress();
                     // read newuser.password
                     newuserPassword = newuser.getPassword();
                 }
@@ -229,12 +258,14 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
             // api target 1
 
             this.buttonReg.setOnClickListener(mCallback3);
+            android.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.editTextEmail, (android.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, editTextEmailandroidTextAttrChanged);
             android.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.editTextPassword, (android.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, editTextPasswordandroidTextAttrChanged);
             android.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.editTextUsername, (android.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (android.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, editTextUsernameandroidTextAttrChanged);
         }
         if ((dirtyFlags & 0x5L) != 0) {
             // api target 1
 
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.editTextEmail, newuserAddress);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.editTextPassword, newuserPassword);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.editTextUsername, newuserUsername);
         }

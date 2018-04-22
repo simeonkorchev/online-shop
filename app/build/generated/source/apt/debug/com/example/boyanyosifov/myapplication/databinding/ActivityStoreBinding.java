@@ -13,11 +13,17 @@ public class ActivityStoreBinding extends android.databinding.ViewDataBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.textView_productName, 1);
+        sViewsWithIds.put(android.R.id.list, 2);
     }
     // views
     @NonNull
+    public final android.widget.ListView list;
+    @NonNull
     private final android.widget.RelativeLayout mboundView0;
+    @NonNull
+    public final android.widget.TextView textViewProductName;
     // variables
     // values
     // listeners
@@ -25,9 +31,11 @@ public class ActivityStoreBinding extends android.databinding.ViewDataBinding  {
 
     public ActivityStoreBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds);
+        final Object[] bindings = mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds);
+        this.list = (android.widget.ListView) bindings[2];
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.textViewProductName = (android.widget.TextView) bindings[1];
         setRootTag(root);
         // listeners
         invalidateAll();

@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import android.widget.Toast;
@@ -94,9 +95,14 @@ public class Database {
         }
 
         public void openConnection() {
-            SQLiteDatabase database = getWritableDatabase();
-            initContentProviders(database);
-            addTestValues();
+            try {
+                SQLiteDatabase database = getWritableDatabase();
+                initContentProviders(database);
+                addTestValues();
+            }
+            catch (SQLiteException e){
+                System.out.println(e.getMessage());
+            }
         }
 
         private void addTestValues() {

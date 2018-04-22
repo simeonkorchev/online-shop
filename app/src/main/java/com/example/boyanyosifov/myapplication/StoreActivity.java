@@ -3,6 +3,7 @@ package com.example.boyanyosifov.myapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,28 +18,28 @@ import com.example.boyanyosifov.myapplication.com.online.shop.repository.DataMan
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Laptop;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Phone;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.PhoneContentProvider;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.Product;
 import com.example.boyanyosifov.myapplication.databinding.ActivityStoreBinding;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StoreActivity extends AppCompatActivity{
 
     //ActivityStoreBinding storeBinding;
-    private ListView mainListView ;
-    private ArrayAdapter<String> listAdapter ;
-    private List<Phone> phones;
+    ListView listView;
+
+    ArrayAdapter<Product> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
 
+        //adapter = new ArrayAdapter<Phone>(this, R.layout)
 
-        mainListView = (ListView)findViewById(R.id.mainListView);
-        //phones = getall();
-
-        //listAdapter = new ArrayAdapter<Phone>(this, R.layout.l)
     }
 
     public void navigateToProductAct(){
@@ -48,5 +49,12 @@ public class StoreActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
+    private class ProductAdapter extends ArrayAdapter<Product>{
+        public ProductAdapter(@NonNull Context context, int resource, int textViewResourceId) {
+            super(context, resource, textViewResourceId);
+        }
+    }
+
 
 }
+
