@@ -8,7 +8,9 @@ public class Laptop extends  Product implements Serializable{
     public Laptop(long id, String manufacturer, String model, String description, double price) {
         super(id,manufacturer,model,description,price);
     }
-
+    public Laptop(String manufacturer, String model, String description, double price) {
+        super(manufacturer,model,description,price);
+    }
     public String getManufacturer() {
         return super.getManufacturer();
     }

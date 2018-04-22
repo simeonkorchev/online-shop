@@ -12,7 +12,7 @@ public class LaptopManager implements ILaptopManager {
     private LaptopContentProvider laptopContentProvider;
 
     public LaptopManager(Context context) {
-        laptopContentProvider = new Database(context).getLaptopDbContentProvider();
+        laptopContentProvider = Database.getInstance(context).getLaptopDbContentProvider();
     }
 
     @Override

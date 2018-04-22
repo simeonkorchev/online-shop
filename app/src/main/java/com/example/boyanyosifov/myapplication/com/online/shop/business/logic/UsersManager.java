@@ -13,7 +13,7 @@ public class UsersManager implements IUsersManager {
     private Context context;
     private UserContentProvider userDbContentProvider;
     public UsersManager(Context context) {
-        userDbContentProvider = new Database(context).getUserDbContentProvider();
+        userDbContentProvider = Database.getInstance(context).getUserDbContentProvider();
     }
 
     @Override

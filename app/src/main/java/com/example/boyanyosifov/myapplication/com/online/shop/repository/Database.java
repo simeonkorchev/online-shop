@@ -8,6 +8,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.LaptopSchema.LAPTOP_TABLE;
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.LaptopSchema.LAPTOP_TABLE_CREATE;
 import static com.example.boyanyosifov.myapplication.com.online.shop.repository.OrderSchema.ORDER_TABLE;
@@ -23,9 +26,19 @@ public class Database {
     private LaptopContentProvider laptopDbContentProvider;
     private PhoneContentProvider phoneDbContentProvider;
     private OrderContentProvider orderDbContentProvider;
+    private static Database instance;
 
-    public Database(Context context) {
+    private Database(Context context) {
         this.databaseHelper =  new DatabaseHelper(context);
+        openConnection();
+    }
+
+    public static final Database getInstance(Context context) {
+        if(instance == null ) {
+            instance = new Database(context);
+        }
+
+        return instance;
     }
 
     public void openConnection() {
@@ -83,6 +96,26 @@ public class Database {
         public void openConnection() {
             SQLiteDatabase database = getWritableDatabase();
             initContentProviders(database);
+            addTestValues();
+        }
+
+        private void addTestValues() {
+            addLaptopEntities();
+            addPhoneEntities();
+        }
+
+        private void addLaptopEntities() {
+            List<Laptop> testValues = new ArrayList<>();
+            testValues.add(new Laptop("Lenovo", "T540P","Simple description for lenovo",1450.99 ));
+            testValues.add(new Laptop("Acer", "Aspire E5","Simple description for acer",1450.99 ));
+            laptopDbContentProvider.addEntities(testValues);
+        }
+
+        private void addPhoneEntities() {
+            List<Phone> testValues = new ArrayList<>();
+            testValues.add(new Phone("Apple", "Iphone 6", "Simple description for Iphone", 600.0));
+            testValues.add(new Phone("Samsung", "S6","Simple description for Samsung",750.99 ));
+            phoneDbContentProvider.addEntities(testValues);
         }
 
         private void initContentProviders(SQLiteDatabase database) {
