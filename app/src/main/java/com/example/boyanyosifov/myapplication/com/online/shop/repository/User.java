@@ -1,6 +1,11 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
-public class User {
+import android.databinding.BaseObservable;
+import android.databinding.Bindable;
+
+import com.example.boyanyosifov.myapplication.R;
+
+public class User extends BaseObservable{
     private int id;
     private String username;
     private String password;
@@ -29,16 +34,20 @@ public class User {
         return username;
     }
 
+    @Bindable
     public void setUsername(String username) {
         this.username = username;
+        notifyPropertyChanged(R.id.editText_username);
     }
 
     public String getPassword() {
         return password;
     }
 
+    @Bindable
     public void setPassword(String password) {
         this.password = password;
+        notifyPropertyChanged(R.id.editText_password);
     }
 
     public String getAddress() {

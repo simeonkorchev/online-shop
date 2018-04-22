@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26\\ic_launcher_round.xml",
-        "source": "D:\\Projects\\PMU\\MyApplication\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26/ic_launcher_round.xml",
+        "source": "/home/boyanyosifov/PMU/online-shop/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26\\ic_launcher.xml",
-        "source": "D:\\Projects\\PMU\\MyApplication\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26/ic_launcher.xml",
+        "source": "/home/boyanyosifov/PMU/online-shop/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     }
 ]
