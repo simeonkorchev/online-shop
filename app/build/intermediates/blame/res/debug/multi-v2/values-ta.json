@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\values-ta\\values-ta.xml",
+            "outputFile": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/res/merged/debug/values-ta/values-ta.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92f7611b128604fc6d76a98bbb8c9890\\res\\values-ta\\values-ta.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/res/values-ta/values-ta.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b0637a11f495be1bdfd3f783b31546d0\\res\\values-ta\\values-ta.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/res/values-ta/values-ta.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -33,10 +33,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Projects\\PMU\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
+            "outputFile": "/home/boyanyosifov/PMU/online-shop/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92f7611b128604fc6d76a98bbb8c9890\\res\\values-ta\\values-ta.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/res/values-ta/values-ta.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -46,7 +46,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Симеон\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b0637a11f495be1bdfd3f783b31546d0\\res\\values-ta\\values-ta.xml",
+                    "source": "/home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/res/values-ta/values-ta.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

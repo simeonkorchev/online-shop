@@ -1,6 +1,8 @@
 package com.example.boyanyosifov.myapplication;
 
+import android.app.Application;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,52 +12,42 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.boyanyosifov.myapplication.com.online.shop.business.logic.ManagerFactory;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Database;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.User;
+import com.example.boyanyosifov.myapplication.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editText_Username, editText_Password;
-    Button button_Login;
-    Database database;
-    TextView textView;
+    ActivityMainBinding mainBinding;
+    User user;
+    ManagerFactory managerFactory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        user = new User();
+        mainBinding.setUser(user);
 
-        editText_Username = (EditText)findViewById(R.id.nameET);
-        editText_Password = (EditText)findViewById(R.id.editText);
-        button_Login = (Button)findViewById(R.id.btnLogin);
-        database = new Database(this);
-        textView = (TextView)findViewById(R.id.tvRegister);
 
-        btnLoginFunc();
-        textViewFunc();
-    }
 
-    public void btnLoginFunc(){
-        button_Login.setOnClickListener(new View.OnClickListener() {
+        mainBinding.setMainEvent(new IMainEvent() {
             @Override
-            public void onClick(View v) {
-                if(findUser(editText_Username.getText().toString(), editText_Password.getText().toString())) {
-                    Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_LONG).show();
-                    navigateToStoreAct();
-                }
-                else
-                    Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_LONG).show();
+            public void onClickLogin() {
+                //validation, login and navigate to store activity
+                ManagerFactory.getUsersManager(MainActivity.this).login(user.getUsername(), user.getPassword());
             }
-        });
-    }
 
-    public void textViewFunc(){
-        textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClickRegister() {
+                //Navigate to register
                 navigateToRegistrationAct();
             }
         });
     }
+
+
 
     private void showMessage(String title,String message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -66,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean findUser(String username, String password){
-        return database.getUserDbContentProvider().
+        return false;//database.getUserDbContentProvider().
 
     }
 

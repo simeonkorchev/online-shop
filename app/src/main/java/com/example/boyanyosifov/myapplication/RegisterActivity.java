@@ -1,5 +1,6 @@
 package com.example.boyanyosifov.myapplication;
 
+import android.databinding.DataBindingUtil;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,36 +9,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.User;
+import com.example.boyanyosifov.myapplication.databinding.ActivityMainBinding;
+import com.example.boyanyosifov.myapplication.databinding.ActivityRegisterBinding;
+
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText editText_username, editText_password;
-    Button btnRegister;
-    UserDB userDB;
+    ActivityRegisterBinding registerBinding;
+    User newUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        registerBinding = DataBindingUtil.setContentView(this, R.layout.activity_register);
 
-        btnRegister = (Button)findViewById(R.id.buttonReg);
-        editText_username = (EditText)findViewById(R.id.editText_username);
-        editText_password = (EditText)findViewById(R.id.editText_password);
-        userDB = new UserDB(this);
+       registerBinding.setNewuser(newUser);
 
-        btnRegisterFunc();
-    }
+       registerBinding.setRegisterevent(new IRegisterEvent() {
+           @Override
+           public void onClickRegister() {
+               //validation and add user to db
+           }
+       });
 
-    public void btnRegisterFunc(){
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                boolean res = userDB.addData(editText_username.getText().toString(), editText_password.getText().toString());
-
-                if(res)
-                    Toast.makeText(RegisterActivity.this,"Successful registration", Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(RegisterActivity.this,"Failed registration", Toast.LENGTH_LONG).show();
-            }
-        });
     }
 
     private void showMessage(String title,String message){

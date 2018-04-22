@@ -1,6 +1,8 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
-public class Laptop {
+import java.io.Serializable;
+
+public class Laptop implements Serializable{
     private int id;
     private String manufacturer;
     private String model;

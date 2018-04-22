@@ -25,6 +25,7 @@
         </activity>
         <activity android:name="com.example.boyanyosifov.myapplication.StoreActivity" />
         <activity android:name="com.example.boyanyosifov.myapplication.RegisterActivity" />
+        <activity android:name="com.example.boyanyosifov.myapplication.ProductActivity" />
     </application>
 
 </manifest>

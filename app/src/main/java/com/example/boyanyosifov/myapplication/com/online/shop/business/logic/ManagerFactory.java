@@ -1,5 +1,7 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.business.logic;
 
+import android.content.Context;
+
 import com.example.boyanyosifov.myapplication.com.online.shop.business.logic.IManagerFactory;
 
 public final class ManagerFactory {

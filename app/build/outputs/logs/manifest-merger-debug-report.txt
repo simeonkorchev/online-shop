@@ -1,111 +1,121 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\92f7611b128604fc6d76a98bbb8c9890\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\edbeaf2b966d07f46e4bf6d484075277\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9b70f456f333d98c2d6c720809a6da06\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\76b557e96b6104daf282c9ce76dda8a3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d9187f3b875acb46269c8052afd9531b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\aaad52128cce3b3805fe959ff3bc2071\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\04536ac7d91760e41cf12a42887577b5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b0637a11f495be1bdfd3f783b31546d0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4a495a0baf9a18c801cfe8a09b7dd8c1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1b82cbcf0cfb88f1f2139be013314716\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7129f3034bb902af13c80b538d12bc7e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\137034de215cebd36b52e28522ddba17\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.databinding:adapters:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/adapters-3.1.1.aar/5a1096b45e17962544d8fd4ec696d09e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/library-3.1.1.aar/703132580d0d8f4fa955681cc61ad02e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0d307ea87948dbb1b1a91c0b5f03c671/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/fd19edd46c4b7e73cffb96addacd399c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/aedb2433ef5c6fba4a3eae4faf9f2012/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/671ca1cfdf999428da8423321c04d52f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bea10fee0847df168e686b71f48c71a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8103c33e810182a38c321dd327c29372/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ecb83f72e61d992003e2cd188262947f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a16560a04c0a0201054f3c678c207feb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6f9b7f1f9941506cb00d8b71702d01a/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:3:5-53
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:3:5-53
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:5:5-21:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\edbeaf2b966d07f46e4bf6d484075277\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\edbeaf2b966d07f46e4bf6d484075277\AndroidManifest.xml:9:5-20
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.boyanyosifov.myapplication.MainActivity
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.example.boyanyosifov.myapplication.StoreActivity
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:19:9-51
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:19:9-51
 	android:name
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:19:19-48
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:19:19-48
 activity#com.example.boyanyosifov.myapplication.RegisterActivity
-ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:20:9-63
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:20:9-54
 	android:name
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml:20:19-51
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:20:19-51
+activity#com.example.boyanyosifov.myapplication.ProductActivity
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:21:9-62
+	android:name
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:21:19-50
 uses-sdk
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\92f7611b128604fc6d76a98bbb8c9890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\92f7611b128604fc6d76a98bbb8c9890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\edbeaf2b966d07f46e4bf6d484075277\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\edbeaf2b966d07f46e4bf6d484075277\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9b70f456f333d98c2d6c720809a6da06\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9b70f456f333d98c2d6c720809a6da06\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\76b557e96b6104daf282c9ce76dda8a3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\76b557e96b6104daf282c9ce76dda8a3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d9187f3b875acb46269c8052afd9531b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d9187f3b875acb46269c8052afd9531b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\aaad52128cce3b3805fe959ff3bc2071\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\aaad52128cce3b3805fe959ff3bc2071\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\04536ac7d91760e41cf12a42887577b5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\04536ac7d91760e41cf12a42887577b5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b0637a11f495be1bdfd3f783b31546d0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b0637a11f495be1bdfd3f783b31546d0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4a495a0baf9a18c801cfe8a09b7dd8c1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4a495a0baf9a18c801cfe8a09b7dd8c1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1b82cbcf0cfb88f1f2139be013314716\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1b82cbcf0cfb88f1f2139be013314716\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7129f3034bb902af13c80b538d12bc7e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7129f3034bb902af13c80b538d12bc7e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\137034de215cebd36b52e28522ddba17\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Симеон\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\137034de215cebd36b52e28522ddba17\AndroidManifest.xml:20:5-44
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/adapters-3.1.1.aar/5a1096b45e17962544d8fd4ec696d09e/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/adapters-3.1.1.aar/5a1096b45e17962544d8fd4ec696d09e/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/library-3.1.1.aar/703132580d0d8f4fa955681cc61ad02e/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/library-3.1.1.aar/703132580d0d8f4fa955681cc61ad02e/AndroidManifest.xml:22:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0d307ea87948dbb1b1a91c0b5f03c671/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0d307ea87948dbb1b1a91c0b5f03c671/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/fd19edd46c4b7e73cffb96addacd399c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/fd19edd46c4b7e73cffb96addacd399c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/aedb2433ef5c6fba4a3eae4faf9f2012/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/aedb2433ef5c6fba4a3eae4faf9f2012/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/671ca1cfdf999428da8423321c04d52f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/671ca1cfdf999428da8423321c04d52f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bea10fee0847df168e686b71f48c71a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bea10fee0847df168e686b71f48c71a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8103c33e810182a38c321dd327c29372/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8103c33e810182a38c321dd327c29372/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ecb83f72e61d992003e2cd188262947f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ecb83f72e61d992003e2cd188262947f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a16560a04c0a0201054f3c678c207feb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a16560a04c0a0201054f3c678c207feb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6f9b7f1f9941506cb00d8b71702d01a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6f9b7f1f9941506cb00d8b71702d01a/AndroidManifest.xml:20:5-44
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\PMU\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
