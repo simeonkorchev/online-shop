@@ -13,6 +13,9 @@ public class Phone extends Product implements Serializable{
 
     }
 
+    public Phone(String manufacturer, String model, String description, double price){
+        super(manufacturer, model, description, price);
+    }
     public String getManufacturer() {
         return super.getManufacturer();
     }

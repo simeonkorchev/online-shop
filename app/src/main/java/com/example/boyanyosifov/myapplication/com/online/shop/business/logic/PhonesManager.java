@@ -11,7 +11,7 @@ import java.util.List;
 public class PhonesManager implements IPhonesManager {
     private PhoneContentProvider phoneContentProvider;
     public PhonesManager(Context context) {
-        phoneContentProvider = new Database(context).getPhoneDbContentProvider();
+        phoneContentProvider =  Database.getInstance(context).getPhoneDbContentProvider();
     }
 
     @Override

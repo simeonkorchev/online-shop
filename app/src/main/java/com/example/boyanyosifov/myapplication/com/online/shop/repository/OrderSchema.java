@@ -12,9 +12,9 @@ public interface OrderSchema  {
             COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"+
             COLUMN_USER_ID + " INTEGER, " +
             COLUMN_PRODUCT_ID + " INTEGER, " +
-            COLUMN_PRODUCT_TYPE + " VARCHAR(32) " +
+            COLUMN_PRODUCT_TYPE + " VARCHAR(32), " +
             " FOREIGN KEY(" + COLUMN_USER_ID + ") REFERENCES " + UserSchema.USER_TABLE + " (" + UserSchema.ID  +
-            ")";
+            ")" + ")";
 
     String[] ORDER_COLUMNS = new String[] { COLUMN_ID,
             COLUMN_PRODUCT_TYPE, COLUMN_USER_ID, COLUMN_PRODUCT_ID };

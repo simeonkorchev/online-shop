@@ -15,7 +15,7 @@ public class OrderManager implements IOrderManager {
     private OrderContentProvider orderDbContentProvider;
 
     public OrderManager(Context context) {
-        orderDbContentProvider = new Database(context).getOrderDbContentProvider();
+        orderDbContentProvider = Database.getInstance(context).getOrderDbContentProvider();
     }
 
     @Override
