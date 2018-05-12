@@ -36,10 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClickLogin() {
                 //validation, login and navigate to store activity
-                if (Validator.validateLogin(user.getUsername(), user.getPassword())){
-                    //ManagerFactory.getUsersManager().login(user.getUsername(), user.getPassword());
+                if (Validator.validateLogin(user.getUsername(), user.getPassword()) &&
+                        ManagerFactory.getUsersManager(MainActivity.this).login(user.getUsername(), user.getPassword()) != null){
+
                     navigateToStoreAct();
                 }
+                else
+                    Toast.makeText(MainActivity.this, "User not found", Toast.LENGTH_SHORT).show();
 
 
 

@@ -9,13 +9,13 @@ public interface PhoneSchema {
     String COLUMN_DESCRIPTION = "description";
     String COLUMN_PRICE = "price";
 
-    String PHONE_TABLE_CREATE = "CREATE TABLE " + PHONE_TABLE + "(" +
-            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"+
-            COLUMN_MANUFACTURER + " VARCHAR(32)," +
-            COLUMN_MODEL + " VARCHAR(32)," +
-            COLUMN_DESCRIPTION + " TEXT" +
+    String PHONE_TABLE_CREATE = "CREATE TABLE " + PHONE_TABLE + " (" +
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+            COLUMN_MANUFACTURER + " VARCHAR(32), " +
+            COLUMN_MODEL + " VARCHAR(32), " +
+            COLUMN_DESCRIPTION + " TEXT, " +
             COLUMN_PRICE + " DOUBLE" +
-            ")";
+            ");";
 
     String[] PHONE_COLUMNS = new String[] { COLUMN_ID,
             COLUMN_MANUFACTURER, COLUMN_MODEL, COLUMN_DESCRIPTION, COLUMN_PRICE };

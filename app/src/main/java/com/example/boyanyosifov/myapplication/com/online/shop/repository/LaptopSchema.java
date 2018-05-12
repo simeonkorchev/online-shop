@@ -9,13 +9,13 @@ public interface LaptopSchema {
     String COLUMN_DESCRIPTION = "description";
     String COLUMN_PRICE = "price";
 
-    String LAPTOP_TABLE_CREATE = "CREATE TABLE " + LAPTOP_TABLE + "(" +
-            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"+
-            COLUMN_MANUFACTURER + " VARCHAR(32)," +
-            COLUMN_MODEL + " VARCHAR(32)," +
-            COLUMN_DESCRIPTION + " TEXT" +
+    String LAPTOP_TABLE_CREATE = "CREATE TABLE " + LAPTOP_TABLE + " (" +
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+            COLUMN_MANUFACTURER + " VARCHAR(32), " +
+            COLUMN_MODEL + " VARCHAR(32), " +
+            COLUMN_DESCRIPTION + " TEXT, " +
             COLUMN_PRICE + " DOUBLE" +
-            ")";
+            ");";
 
     String[] LAPTOP_COLUMNS = new String[] { COLUMN_ID,
             COLUMN_MANUFACTURER, COLUMN_MODEL, COLUMN_DESCRIPTION, COLUMN_PRICE };
