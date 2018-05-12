@@ -86,7 +86,7 @@ public class PhoneContentProvider extends DbContentProvider implements PhoneSche
 
     private void setContentValues(Phone entity) {
         contentValues = new ContentValues();
-        contentValues.put(COLUMN_ID, entity.getId());
+        //contentValues.put(COLUMN_ID, entity.getId());
         contentValues.put(COLUMN_MANUFACTURER, entity.getManufacturer());
         contentValues.put(COLUMN_MODEL, entity.getModel());
         contentValues.put(COLUMN_DESCRIPTION, entity.getDescription());

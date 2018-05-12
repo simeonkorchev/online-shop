@@ -5,6 +5,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+import android.widget.Toast;
+
+import com.example.boyanyosifov.myapplication.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,18 +41,25 @@ public class UserContentProvider extends DbContentProvider implements DataManage
     @Override
     public List<User> getAll() {
         List<User> userList = new ArrayList<User>();
-        cursor = super.query(USER_TABLE, USER_COLUMNS, null,
-                null, COLUMN_ID);
+        try {
+            cursor = super.query(USER_TABLE, USER_COLUMNS, null,
+                    null, COLUMN_ID);
 
-        if (cursor != null) {
-            cursor.moveToFirst();
-            while (!cursor.isAfterLast()) {
-                User user = cursorToEntity(cursor);
-                userList.add(user);
-                cursor.moveToNext();
+            if (cursor != null) {
+                cursor.moveToFirst();
+                while (!cursor.isAfterLast()) {
+                    User user = cursorToEntity(cursor);
+                    userList.add(user);
+                    cursor.moveToNext();
+                }
+                cursor.close();
             }
-            cursor.close();
         }
+        catch (RuntimeException ex){
+            System.out.println(ex.getStackTrace());
+        }
+
+
 
         return userList;
     }
@@ -97,7 +107,7 @@ public class UserContentProvider extends DbContentProvider implements DataManage
 
     private void setContentValue(User user) {
         initialValues = new ContentValues();
-        initialValues.put(COLUMN_ID, user.getId());
+        //initialValues.put(COLUMN_ID, user.getId());
         initialValues.put(COLUMN_USERNAME, user.getUsername());
         initialValues.put(COLUMN_ADDRESS, user.getAddress());
         initialValues.put(COLUMN_PASSWORD, user.getPassword());

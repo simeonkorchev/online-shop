@@ -93,7 +93,7 @@ public class LaptopContentProvider extends DbContentProvider implements DataMana
 
     private void setContentValues(Laptop laptop) {
         contentValues = new ContentValues();
-        contentValues.put(COLUMN_ID, laptop.getId());
+        //contentValues.put(COLUMN_ID, laptop.getId());
         contentValues.put(COLUMN_MANUFACTURER, laptop.getManufacturer());
         contentValues.put(COLUMN_MODEL, laptop.getModel());
         contentValues.put(COLUMN_DESCRIPTION, laptop.getDescription());
