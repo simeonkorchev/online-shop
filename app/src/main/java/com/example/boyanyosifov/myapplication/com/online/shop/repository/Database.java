@@ -104,7 +104,7 @@ public class Database {
             try {
                 SQLiteDatabase database = getWritableDatabase();
                 initContentProviders(database);
-                addTestValues();
+                //addTestValues();
             }
             catch (SQLiteException e){
                 System.out.println(e.getMessage());

@@ -8,6 +8,9 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="27" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:debuggable="true"
@@ -27,6 +30,22 @@
         <activity android:name="com.example.boyanyosifov.myapplication.StoreActivity" />
         <activity android:name="com.example.boyanyosifov.myapplication.RegisterActivity" />
         <activity android:name="com.example.boyanyosifov.myapplication.ProductActivity" />
+        <activity android:name="com.example.boyanyosifov.myapplication.shopping_layout" />
+        <activity android:name="com.example.boyanyosifov.myapplication.CartActivity" />
+        <activity android:name="com.example.boyanyosifov.myapplication.PayPalCheckoutActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
     </application>
 
 </manifest>

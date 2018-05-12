@@ -4,6 +4,6 @@ import com.example.boyanyosifov.myapplication.com.online.shop.repository.Laptop;
 
 import java.util.List;
 
-interface ILaptopManager {
+public interface ILaptopManager {
     List<Laptop> getAll();
 }
