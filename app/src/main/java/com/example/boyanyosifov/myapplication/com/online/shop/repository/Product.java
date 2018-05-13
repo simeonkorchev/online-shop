@@ -1,6 +1,8 @@
 package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
-public abstract class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable{
     private static final long INVALID_ID = -1;
     private long id;
     private String manufacturer;

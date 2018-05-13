@@ -34,6 +34,9 @@ public class RegisterActivity extends AppCompatActivity {
            @Override
            public void onClickRegister() {
                //validation and add user to db
+
+               //Toast.makeText(RegisterActivity.this, "User:" + registerBinding.getNewuser().getUsername(), Toast.LENGTH_SHORT).show();
+
                if(Validator.validateRegistration(newUser.getUsername(), newUser.getPassword(), editText.getText().toString())){
                    Toast.makeText(RegisterActivity.this, "Successful registration!", Toast.LENGTH_SHORT).show();
                    ManagerFactory.getUsersManager(RegisterActivity.this).

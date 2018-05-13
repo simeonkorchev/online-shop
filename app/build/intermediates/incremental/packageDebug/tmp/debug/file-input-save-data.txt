@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Sun Apr 22 14:41:36 EEST 2018
+#Sat May 12 18:41:22 EEST 2018
+1.base=/home/boyanyosifov/PMU/online-shop/app/build/intermediates/transforms/dexMerger/debug/72
 0.baseType=DIRECTORY
-0.base=/home/boyanyosifov/PMU/online-shop/app/build/intermediates/transforms/dexMerger/debug/0
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
 0.path=classes.dex
 0.set=DEX
-count=1
+0.base=/home/boyanyosifov/PMU/online-shop/app/build/intermediates/transforms/dexMerger/debug/71
+1.path=classes.dex

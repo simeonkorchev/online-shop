@@ -1,44 +1,52 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [com.android.databinding:adapters:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/adapters-3.1.1.aar/5a1096b45e17962544d8fd4ec696d09e/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.databinding:library:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/library-3.1.1.aar/703132580d0d8f4fa955681cc61ad02e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f4f3842e54262fb86f3919bd04943cd4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/81ab51f07d8d8e53ab7aef0e5922d91e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8909712d62f65b7482a11b6f93e221fc/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0d307ea87948dbb1b1a91c0b5f03c671/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/fd19edd46c4b7e73cffb96addacd399c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/aedb2433ef5c6fba4a3eae4faf9f2012/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/226cb3c96efc043e6073ad5c0b599824/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/671ca1cfdf999428da8423321c04d52f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/69415da08f6622705f4a76b288a29fbe/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bea10fee0847df168e686b71f48c71a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/8103c33e810182a38c321dd327c29372/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ecb83f72e61d992003e2cd188262947f/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a16560a04c0a0201054f3c678c207feb/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f6f9b7f1f9941506cb00d8b71702d01a/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:3:5-53
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
-		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
-		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:5:5-22:19
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:9:5-20
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:12:5-26:19
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:12:5-26:19
 	android:supportsRtl
 		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
@@ -74,9 +82,21 @@ ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:2
 	android:name
 		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:20:19-51
 activity#com.example.boyanyosifov.myapplication.ProductActivity
-ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:21:9-62
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:21:9-53
 	android:name
 		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:21:19-50
+activity#com.example.boyanyosifov.myapplication.shopping_layout
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:22:9-53
+	android:name
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:22:19-50
+activity#com.example.boyanyosifov.myapplication.CartActivity
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:23:9-50
+	android:name
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:23:19-47
+activity#com.example.boyanyosifov.myapplication.PayPalCheckoutActivity
+ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:24:9-69
+	android:name
+		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml:24:19-57
 uses-sdk
 INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
@@ -85,18 +105,30 @@ MERGED from [com.android.databinding:adapters:3.1.1] /home/boyanyosifov/.gradle/
 MERGED from [com.android.databinding:adapters:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/adapters-3.1.1.aar/5a1096b45e17962544d8fd4ec696d09e/AndroidManifest.xml:22:5-44
 MERGED from [com.android.databinding:library:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/library-3.1.1.aar/703132580d0d8f4fa955681cc61ad02e/AndroidManifest.xml:22:5-44
 MERGED from [com.android.databinding:library:3.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/library-3.1.1.aar/703132580d0d8f4fa955681cc61ad02e/AndroidManifest.xml:22:5-44
+MERGED from [com.android.support:design:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f4f3842e54262fb86f3919bd04943cd4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f4f3842e54262fb86f3919bd04943cd4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f3424a5b55b4a8cb54ffa79cc3959b12/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0b09db553fd2cfd05a04746d03211353/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/81ab51f07d8d8e53ab7aef0e5922d91e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/81ab51f07d8d8e53ab7aef0e5922d91e/AndroidManifest.xml:20:5-44
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:5:5-7:41
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8909712d62f65b7482a11b6f93e221fc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8909712d62f65b7482a11b6f93e221fc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0d307ea87948dbb1b1a91c0b5f03c671/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0d307ea87948dbb1b1a91c0b5f03c671/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/fd19edd46c4b7e73cffb96addacd399c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/fd19edd46c4b7e73cffb96addacd399c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/aedb2433ef5c6fba4a3eae4faf9f2012/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/aedb2433ef5c6fba4a3eae4faf9f2012/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/226cb3c96efc043e6073ad5c0b599824/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/226cb3c96efc043e6073ad5c0b599824/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/671ca1cfdf999428da8423321c04d52f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/671ca1cfdf999428da8423321c04d52f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/69415da08f6622705f4a76b288a29fbe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/69415da08f6622705f4a76b288a29fbe/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bea10fee0847df168e686b71f48c71a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3bea10fee0847df168e686b71f48c71a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/efc1ffd717bbde3ab4a95ab463cb7209/AndroidManifest.xml:20:5-44
@@ -119,3 +151,53 @@ INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xm
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 		ADDED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
 		INJECTED from /home/boyanyosifov/PMU/online-shop/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:10:22-64
+activity#com.paypal.android.sdk.payments.PaymentActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:13:9-84
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:13:19-81
+activity#com.paypal.android.sdk.payments.PaymentMethodActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:14:9-90
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:14:19-87
+activity#com.paypal.android.sdk.payments.PaymentConfirmActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:15:9-91
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:15:19-88
+activity#com.paypal.android.sdk.payments.LoginActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:16:9-82
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:16:19-79
+activity#com.paypal.android.sdk.payments.PayPalFuturePaymentActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:17:9-96
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:17:19-93
+activity#com.paypal.android.sdk.payments.FuturePaymentConsentActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:18:9-97
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:18:19-94
+activity#com.paypal.android.sdk.payments.FuturePaymentInfoActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:19:9-94
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:19:19-91
+activity#com.paypal.android.sdk.payments.PayPalProfileSharingActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:20:9-97
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:20:19-94
+activity#com.paypal.android.sdk.payments.ProfileSharingConsentActivity
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:21:9-98
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:21:19-95
+service#com.paypal.android.sdk.payments.PayPalService
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.14.4] /home/boyanyosifov/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.14.4.aar/4c25755eb6d1f14741a6b4a07b6f8e94/AndroidManifest.xml:24:13-73

@@ -8,13 +8,13 @@ public interface UserSchema {
     String COLUMN_PASSWORD = "password";
     String COLUMN_ADDRESS = "address";
 
-    String USER_TABLE_CREATE = "CREATE TABLE " + USER_TABLE + "(" +
-            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"+
-            COLUMN_USERNAME + " VARCHAR(32)," +
-            COLUMN_PASSWORD + " VARCHAR(32)," +
-            COLUMN_ADDRESS + " VARCHAR(255)" +
-            ")";
+    String USER_TABLE_CREATE = "CREATE TABLE " + USER_TABLE + " (" +
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+            COLUMN_USERNAME + " VARCHAR(32), " +
+            COLUMN_PASSWORD + " VARCHAR(32), " +
+            COLUMN_ADDRESS + " VARCHAR(255) " +
+            ");";
 
     String[] USER_COLUMNS = new String[] { COLUMN_ID,
-            COLUMN_USERNAME, COLUMN_PASSWORD };
+            COLUMN_USERNAME, COLUMN_PASSWORD,COLUMN_ADDRESS };
 }

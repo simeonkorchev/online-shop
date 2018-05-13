@@ -2,10 +2,13 @@ package com.example.boyanyosifov.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -13,13 +16,14 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.boyanyosifov.myapplication.com.online.shop.adapters.ShopRecyclerViewAdapter;
 import com.example.boyanyosifov.myapplication.com.online.shop.business.logic.ManagerFactory;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.DataManager;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Laptop;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Phone;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.PhoneContentProvider;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Product;
-import com.example.boyanyosifov.myapplication.databinding.ActivityStoreBinding;
+import com.example.boyanyosifov.myapplication.com.online.shop.utils.SpacesItemDecoration;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -28,17 +32,26 @@ import java.util.List;
 
 public class StoreActivity extends AppCompatActivity{
 
-    //ActivityStoreBinding storeBinding;
-    ListView listView;
+    RecyclerView recyclerView;
 
-    ArrayAdapter<Product> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
 
-        //adapter = new ArrayAdapter<Phone>(this, R.layout)
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        recyclerView = findViewById(R.id.product_list);
+
+        recyclerView = (RecyclerView)findViewById(R.id.product_list);
+        GridLayoutManager mGrid = new GridLayoutManager(StoreActivity.this, 2);
+        recyclerView.setLayoutManager(mGrid);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.addItemDecoration(new SpacesItemDecoration(2, 12, false));
+
+        ShopRecyclerViewAdapter shopAdapter = new ShopRecyclerViewAdapter(StoreActivity.this, getAllProductsOnSale());
+        recyclerView.setAdapter(shopAdapter);
 
     }
 
@@ -49,10 +62,13 @@ public class StoreActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
-    private class ProductAdapter extends ArrayAdapter<Product>{
-        public ProductAdapter(@NonNull Context context, int resource, int textViewResourceId) {
-            super(context, resource, textViewResourceId);
-        }
+    private List<Product> getAllProductsOnSale(){
+        List<Product> products = new ArrayList<>();
+        //products.add(new Phone("asd","asdsd","ads", 203));
+        products.addAll(ManagerFactory.getPhonesManager(this).getAll());
+        //products.addAll(ManagerFactory.getLaptopManager(this).getAll());
+
+       return products;
     }
 
 

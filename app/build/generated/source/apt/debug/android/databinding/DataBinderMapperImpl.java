@@ -16,15 +16,6 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                     }
                         throw new java.lang.IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
                 }
-                case com.example.boyanyosifov.myapplication.R.layout.activity_product:
- {
-                        final Object tag = view.getTag();
-                        if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
-                    if ("layout/activity_product_0".equals(tag)) {
-                            return new com.example.boyanyosifov.myapplication.databinding.ActivityProductBinding(bindingComponent, view);
-                    }
-                        throw new java.lang.IllegalArgumentException("The tag for activity_product is invalid. Received: " + tag);
-                }
                 case com.example.boyanyosifov.myapplication.R.layout.activity_register:
  {
                         final Object tag = view.getTag();
@@ -33,15 +24,6 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                             return new com.example.boyanyosifov.myapplication.databinding.ActivityRegisterBinding(bindingComponent, view);
                     }
                         throw new java.lang.IllegalArgumentException("The tag for activity_register is invalid. Received: " + tag);
-                }
-                case com.example.boyanyosifov.myapplication.R.layout.activity_store:
- {
-                        final Object tag = view.getTag();
-                        if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
-                    if ("layout/activity_store_0".equals(tag)) {
-                            return new com.example.boyanyosifov.myapplication.databinding.ActivityStoreBinding(bindingComponent, view);
-                    }
-                        throw new java.lang.IllegalArgumentException("The tag for activity_store is invalid. Received: " + tag);
                 }
         }
         return null;
@@ -65,21 +47,9 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                 }
                 break;
             }
-            case 320357045: {
-                if(tag.equals("layout/activity_product_0")) {
-                    return com.example.boyanyosifov.myapplication.R.layout.activity_product;
-                }
-                break;
-            }
             case 2013163103: {
                 if(tag.equals("layout/activity_register_0")) {
                     return com.example.boyanyosifov.myapplication.R.layout.activity_register;
-                }
-                break;
-            }
-            case 1831119719: {
-                if(tag.equals("layout/activity_store_0")) {
-                    return com.example.boyanyosifov.myapplication.R.layout.activity_store;
                 }
                 break;
             }

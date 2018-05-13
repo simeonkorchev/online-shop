@@ -43,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                     Toast.makeText(MainActivity.this, "User not found", Toast.LENGTH_SHORT).show();
-
-
-
             }
 
             @Override
@@ -72,13 +69,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void navigateToStoreAct(){
-        Intent intent = new Intent(getApplicationContext(), StoreActivity.class);
+        Intent intent = new Intent(MainActivity.this, StoreActivity.class);
         //intent.putExtra("user_data", user);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
     public void navigateToRegistrationAct(){
-        Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+        Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

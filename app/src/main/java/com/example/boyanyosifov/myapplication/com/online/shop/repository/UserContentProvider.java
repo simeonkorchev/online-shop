@@ -68,11 +68,13 @@ public class UserContentProvider extends DbContentProvider implements DataManage
     public User addEntity(User user) {
         setContentValue(user);
         try {
-             new User(super.insert(USER_TABLE, getContentValue()), user.getUsername(), user.getPassword(), user.getAddress());
-        } catch (SQLiteConstraintException ex){
+             User createdUser =
+                     new User(super.insert(USER_TABLE, getContentValue()), user.getUsername(), user.getPassword(), user.getAddress());
+            return createdUser;
+        } catch (SQLiteConstraintException ex) {
             Log.w("Database", ex.getMessage());
+            return null;
         }
-        return null;
     }
 
     @Override
