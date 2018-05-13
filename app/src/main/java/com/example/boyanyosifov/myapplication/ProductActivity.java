@@ -1,6 +1,8 @@
 package com.example.boyanyosifov.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -18,6 +20,7 @@ import android.widget.TextView;
 
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Phone;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Product;
+import com.example.boyanyosifov.myapplication.com.online.shop.utils.Constants;
 import com.example.boyanyosifov.myapplication.com.online.shop.utils.SharedProductRefs;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -76,12 +79,12 @@ public class ProductActivity extends AppCompatActivity {
             System.out.println(ex.getStackTrace());
         }
 
-
         Button addToCartButton = (Button)findViewById(R.id.add_to_cart);
         addToCartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String productsFromCart = sharedPreference.retrieveProductFromCart();
+
                 if(productsFromCart.equals("")){
                     List<Product> cartProductList = new ArrayList<Product>();
                     cartProductList.add(product);

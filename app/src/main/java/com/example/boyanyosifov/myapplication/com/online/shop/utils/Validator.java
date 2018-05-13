@@ -1,5 +1,13 @@
-package com.example.boyanyosifov.myapplication;
+package com.example.boyanyosifov.myapplication.com.online.shop.utils;
 
+import android.content.Context;
+
+import com.example.boyanyosifov.myapplication.RegisterActivity;
+import com.example.boyanyosifov.myapplication.com.online.shop.business.logic.ManagerFactory;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.User;
+import com.example.boyanyosifov.myapplication.com.online.shop.repository.UserContentProvider;
+
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

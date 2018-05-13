@@ -65,7 +65,7 @@
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@={user.username}"/>
+            android:text="@={user.username}"/>  <!---->
 
         <EditText
             android:id="@+id/editText_password"
@@ -82,7 +82,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText_username"
             android:text="@={user.password}"
-            />
+            /><!---->
 
     </android.support.constraint.ConstraintLayout>
 

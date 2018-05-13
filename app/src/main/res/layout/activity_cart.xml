@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
                     android:textColor="@color/icons"
-                    android:text=""
+                    android:text="Return to store"
                     android:layout_weight="1"/>
 
                 <Button
@@ -70,7 +70,7 @@
                     android:background="@color/colorPrimaryDark"
                     android:layout_marginLeft="8dp"
                     android:textColor="@color/icons"
-                    android:text=""
+                    android:text="Checkout"
                     android:layout_weight="1"/>
 
             </LinearLayout>
