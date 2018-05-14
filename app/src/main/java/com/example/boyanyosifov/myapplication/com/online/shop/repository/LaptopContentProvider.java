@@ -43,6 +43,7 @@ public class LaptopContentProvider extends DbContentProvider implements DataMana
             cursor.moveToFirst();
             while(!cursor.isAfterLast()) {
                 laptops.add(cursorToEntity(cursor));
+                cursor.moveToNext();
             }
         }
         return laptops;

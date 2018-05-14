@@ -13,27 +13,15 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.editText_City, 5);
-        sViewsWithIds.put(R.id.editText_Country, 6);
-        sViewsWithIds.put(R.id.editText_Adress, 7);
-        sViewsWithIds.put(R.id.editText_Phone, 8);
+        sViewsWithIds = null;
     }
     // views
     @NonNull
     public final android.widget.Button buttonReg;
     @NonNull
-    public final android.widget.EditText editTextAdress;
-    @NonNull
-    public final android.widget.EditText editTextCity;
-    @NonNull
-    public final android.widget.EditText editTextCountry;
-    @NonNull
     public final android.widget.EditText editTextEmail;
     @NonNull
     public final android.widget.EditText editTextPasswordRegister;
-    @NonNull
-    public final android.widget.EditText editTextPhone;
     @NonNull
     public final android.widget.EditText editTextUsername;
     @NonNull
@@ -129,17 +117,13 @@ public class ActivityRegisterBinding extends android.databinding.ViewDataBinding
 
     public ActivityRegisterBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 1);
-        final Object[] bindings = mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds);
-        this.buttonReg = (android.widget.Button) bindings[3];
+        final Object[] bindings = mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds);
+        this.buttonReg = (android.widget.Button) bindings[4];
         this.buttonReg.setTag(null);
-        this.editTextAdress = (android.widget.EditText) bindings[7];
-        this.editTextCity = (android.widget.EditText) bindings[5];
-        this.editTextCountry = (android.widget.EditText) bindings[6];
-        this.editTextEmail = (android.widget.EditText) bindings[4];
+        this.editTextEmail = (android.widget.EditText) bindings[3];
         this.editTextEmail.setTag(null);
         this.editTextPasswordRegister = (android.widget.EditText) bindings[2];
         this.editTextPasswordRegister.setTag(null);
-        this.editTextPhone = (android.widget.EditText) bindings[8];
         this.editTextUsername = (android.widget.EditText) bindings[1];
         this.editTextUsername.setTag(null);
         this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];

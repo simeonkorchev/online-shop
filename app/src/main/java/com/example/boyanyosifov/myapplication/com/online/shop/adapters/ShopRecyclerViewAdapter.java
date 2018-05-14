@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.boyanyosifov.myapplication.ProductActivity;
 import com.example.boyanyosifov.myapplication.R;
@@ -41,7 +42,15 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
         final Product singleProduct = allProducts.get(position);
 
         holder.productName.setText(singleProduct.getModel());
-            holder.produceImage.setImageResource(R.drawable.ic_phone_android_black_24dp);
+        if(singleProduct.getModel().contains("Samsung"))
+            holder.produceImage.setImageResource(R.drawable.samsung_galaxy_s6);
+        if(singleProduct.getModel().contains("Iphone"))
+            holder.produceImage.setImageResource(R.drawable.apple_iphone_6s1);
+        if(singleProduct.getModel().contains("Lenovo"))
+            holder.produceImage.setImageResource(R.drawable.lenovot540p);
+        if(singleProduct.getModel().contains("Acer"))
+            holder.produceImage.setImageResource(R.drawable.aceraspiree5);
+
 
         holder.produceImage.setOnClickListener(new View.OnClickListener() {
             @Override

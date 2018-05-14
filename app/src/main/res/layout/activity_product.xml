@@ -56,11 +56,6 @@ tools:context=".ProductActivity">
                 android:text=""
                 android:textColor="@color/colorAccent"/>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
 
         </LinearLayout>
 
@@ -73,7 +68,7 @@ tools:context=".ProductActivity">
                 android:id="@+id/full_product_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_launcher_foreground"/>
+                android:src="@drawable/ic_phone_android_black_24dp"/>
 
         </LinearLayout>
 
