@@ -41,7 +41,7 @@ public class ShopRecyclerViewAdapter extends RecyclerView.Adapter<ShopRecyclerVi
         final Product singleProduct = allProducts.get(position);
 
         holder.productName.setText(singleProduct.getModel());
-        holder.produceImage.setImageResource(R.drawable.ic_launcher_background);
+            holder.produceImage.setImageResource(R.drawable.ic_phone_android_black_24dp);
 
         holder.produceImage.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -30,7 +30,6 @@
         <activity android:name="com.example.boyanyosifov.myapplication.StoreActivity" />
         <activity android:name="com.example.boyanyosifov.myapplication.RegisterActivity" />
         <activity android:name="com.example.boyanyosifov.myapplication.ProductActivity" />
-        <activity android:name="com.example.boyanyosifov.myapplication.shopping_layout" />
         <activity android:name="com.example.boyanyosifov.myapplication.CartActivity" />
         <activity android:name="com.example.boyanyosifov.myapplication.PayPalCheckoutActivity" />
         <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />

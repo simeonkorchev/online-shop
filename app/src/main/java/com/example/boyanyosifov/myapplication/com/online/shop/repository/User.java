@@ -3,10 +3,13 @@ package com.example.boyanyosifov.myapplication.com.online.shop.repository;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 
 import com.example.boyanyosifov.myapplication.R;
 
 import java.io.Serializable;
+import java.util.Base64;
 
 public class User extends BaseObservable implements Serializable {
     private static final long INVALID_ID = -1;
@@ -54,7 +57,6 @@ public class User extends BaseObservable implements Serializable {
     public String getPassword() {
         return password;
     }
-
     @Bindable
     public void setPassword(String password) {
         this.password = password;

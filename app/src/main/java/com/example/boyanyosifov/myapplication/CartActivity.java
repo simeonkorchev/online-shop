@@ -12,7 +12,9 @@ import android.widget.TextView;
 
 import com.example.boyanyosifov.myapplication.com.online.shop.adapters.CheckRecyclerViewAdapter;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Product;
+import com.example.boyanyosifov.myapplication.com.online.shop.utils.SimpleItemDecor;
 import com.example.boyanyosifov.myapplication.com.online.shop.utils.SharedProductRefs;
+import com.example.boyanyosifov.myapplication.com.online.shop.utils.SimpleItemDecor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -42,7 +44,7 @@ public class CartActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(CartActivity.this);
         checkRecyclerView.setLayoutManager(linearLayoutManager);
         checkRecyclerView.setHasFixedSize(true);
-        //checkRecyclerView.addItemDecoration(new SimpleDividerItemDecoration(CheckoutActivity.this));
+        checkRecyclerView.addItemDecoration(new SimpleItemDecor(CartActivity.this));
 
         // get content of cart
         SharedProductRefs mShared = new SharedProductRefs(CartActivity.this);
@@ -52,6 +54,7 @@ public class CartActivity extends AppCompatActivity {
 
         Product[] addCartProducts = gson.fromJson(mShared.retrieveProductFromCart(), Product[].class);
         List<Product> productList = convertObjectArrayToListObject(addCartProducts);
+
 
         CheckRecyclerViewAdapter mAdapter = new CheckRecyclerViewAdapter(CartActivity.this, productList);
         checkRecyclerView.setAdapter(mAdapter);

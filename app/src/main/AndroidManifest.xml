@@ -19,7 +19,6 @@
         <activity android:name=".StoreActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".ProductActivity" />
-        <activity android:name=".shopping_layout" />
         <activity android:name=".CartActivity" />
         <activity android:name=".PayPalCheckoutActivity"></activity>
     </application>

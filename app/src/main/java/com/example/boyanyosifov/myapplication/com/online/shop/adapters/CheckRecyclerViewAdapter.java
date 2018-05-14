@@ -3,6 +3,7 @@ package com.example.boyanyosifov.myapplication.com.online.shop.adapters;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.boyanyosifov.myapplication.R;
 import com.example.boyanyosifov.myapplication.com.online.shop.repository.Product;
+import com.example.boyanyosifov.myapplication.com.online.shop.utils.SharedProductRefs;
 
 import java.util.List;
 
@@ -26,9 +28,16 @@ public class CheckRecyclerViewAdapter extends RecyclerView.Adapter<CheckRecycler
 
     @Override
     public CheckRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_cart, parent, false);
-        CheckRecyclerViewHolder productHolder = new CheckRecyclerViewHolder(layoutView);
-        return productHolder;
+        try{
+            View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.cart_layout, parent, false);
+            CheckRecyclerViewHolder productHolder = new CheckRecyclerViewHolder(layoutView);
+            return productHolder;
+        }
+        catch (InflateException ex){
+            System.out.println(ex.getStackTrace());
+            return null;
+        }
+
     }
 
     @Override
