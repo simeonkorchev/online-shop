@@ -67,7 +67,18 @@ public class ProductActivity extends AppCompatActivity {
             product = gson.fromJson(productJson, Product.class);
 
             if(product != null) {
-                //productImage.setImageResource(product.getProductImage());
+
+
+                if(product.getModel().contains("Samsung"))
+                    productImage.setImageResource(R.drawable.samsung_galaxy_s6);
+                if(product.getModel().contains("Iphone"))
+                    productImage.setImageResource(R.drawable.apple_iphone_6s1);
+                if(product.getModel().contains("Lenovo"))
+                    productImage.setImageResource(R.drawable.lenovot540p);
+                if(product.getModel().contains("Acer"))
+                    productImage.setImageResource(R.drawable.aceraspiree5);
+
+
                 productManufacturer.setText("Manufacturer: " + product.getManufacturer());
                 productModel.setText("Model: " + product.getModel());
                 productPrice.setText("Price: " + String.valueOf(new Double(product.getPrice()).intValue()) + " $");
@@ -106,15 +117,7 @@ public class ProductActivity extends AppCompatActivity {
             }
         });
 
-        Button btn = (Button)findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ProductActivity.this, CartActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
+
 
     }
 
@@ -174,5 +177,5 @@ public class ProductActivity extends AppCompatActivity {
 
         return new BitmapDrawable(getResources(), bitmap);
     }
-    */
+*/
 }

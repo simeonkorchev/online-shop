@@ -45,7 +45,7 @@ public class StoreActivity extends AppCompatActivity{
         recyclerView = findViewById(R.id.product_list);
 
         recyclerView = (RecyclerView)findViewById(R.id.product_list);
-        GridLayoutManager mGrid = new GridLayoutManager(StoreActivity.this, 2);
+        GridLayoutManager mGrid = new GridLayoutManager(StoreActivity.this, 1);
         recyclerView.setLayoutManager(mGrid);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new SpacesItemDecoration(2, 12, false));
@@ -64,9 +64,8 @@ public class StoreActivity extends AppCompatActivity{
 
     private List<Product> getAllProductsOnSale(){
         List<Product> products = new ArrayList<>();
-        //products.add(new Phone("asd","asdsd","ads", 203));
-        products.addAll(ManagerFactory.getPhonesManager(this).getAll());
-        //products.addAll(ManagerFactory.getLaptopManager(this).getAll());
+        products.addAll(ManagerFactory.getPhonesManager(StoreActivity.this).getAll());
+        products.addAll(ManagerFactory.getLaptopManager(StoreActivity.this).getAll());
 
        return products;
     }
